@@ -1,3 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+* img {
+  width: 100%;
+}
 
+body {
+  height: 500px;
+}
+
+#small-profile-img {
+  width: 20px;
+  height: 20px;
+}
 
 /*# sourceMappingURL=styles.css.map */
