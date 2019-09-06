@@ -11,8 +11,27 @@ body {
   height: 500px;
 }
 
-.fa-github {
+.nav-bar {
+  display: flex;
+  align-items: center;
+  width: 65rem;
+}
+
+.github-icon {
+  display: flex;
+}
+.github-icon i.fa-github {
   color: #FFF;
+  font-size: 2.5rem;
+  padding-top: 2px;
+}
+
+.search-bar {
+  background-color: #3F4448;
+  height: 2.5rem;
+  width: 22rem;
+  border: 0;
+  margin-left: 11px;
 }
 
 .top-nav {
@@ -21,15 +40,16 @@ body {
 
 .header-section {
   display: flex;
-  padding: 1rem;
+  padding: 0.688rem;
   background-color: #23292E;
 }
-.header-section .top-right-nav {
-  display: flex;
-}
 
-.search-bar {
-  background-color: #3F4448;
+.top-right-nav {
+  display: flex;
+  align-items: center;
+  width: 23rem;
+  justify-content: flex-end;
+  color: #FFF;
 }
 
 #sm-profile-img {
@@ -50,6 +70,20 @@ body {
   position: absolute;
   right: 3px;
   color: #57606A;
+}
+
+.aside-section {
+  padding-left: 0;
+}
+
+#profile-img {
+  width: 16.5rem;
+  height: 16.438rem;
+}
+
+.organize-img {
+  width: 35px;
+  height: 35px;
 }
 
 /*# sourceMappingURL=styles.css.map */

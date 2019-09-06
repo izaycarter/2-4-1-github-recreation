@@ -13,7 +13,9 @@
 <body>
     <header class="header-section">
             <nav class="nav-bar text-uppercase">
-                <i class="fab fa-github"></i>
+                <div class="github-icon">
+                    <i class="fab fa-github"></i>
+                </div>
                 <input type="text" class="search-bar" placeholder="Search or jump to..." />
                 <a class="top-nav" href="#">Pull request</a>
                 <a class="top-nav" href="#">issues</a>
@@ -31,10 +33,12 @@
             </section>
     </header>
     <main class="container">
-        <aside class="col col-md-3 col-lg-4 float-md-left">
+        <aside class="col col-md-3 col-lg-4 float-md-left aside-section">
             <section class="col-3 col-md-12">
                 <div class="lg-profile-img">
                     <img id="profile-img" src="css/me.jpg" />
+                </div>
+                <div class="set-status">
                     <i class="far fa-laugh"></i>
                     <span>Set status</span>
                 </div>
@@ -49,7 +53,7 @@
                 </section>
                 <span>Organizations</span>
                 <div class="organize-groups">
-                    <img src="https://avatars1.githubusercontent.com/u/54284124?s=70&v=4" />
+                    <img class="organize-img" src="https://avatars1.githubusercontent.com/u/54284124?s=70&v=4" />
                 </div>
             </section>
         </aside>
@@ -90,7 +94,7 @@
                         <a class="dropdown-item" href="#">CSS</a>
                     </div>
                 </section>
-                <button type="button" class="btn btn-success">New</button>
+                <button type="button" class="btn btn-success"><svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>New</button>
             </form>
 
 
