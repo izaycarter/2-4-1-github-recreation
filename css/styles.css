@@ -74,11 +74,58 @@ body {
 
 .aside-section {
   padding-left: 0;
+  width: 17.5rem;
+  height: 35.55rem;
+  padding-right: 16px;
 }
 
-#profile-img {
+.profile-img-section {
+  padding: 0;
+}
+
+.lg-profile-img {
+  width: 16.5rem;
+}
+.lg-profile-img #profile-img {
   width: 16.5rem;
   height: 16.438rem;
+}
+
+.set-status {
+  border: 1px solid #E1E4E8;
+  padding: 0.5rem;
+}
+.set-status span {
+  color: #586069;
+}
+
+i.fa-laugh {
+  color: #586069;
+}
+
+.user-section {
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 16.5rem;
+}
+
+.user-name {
+  width: 16.5rem;
+}
+.user-name #user-name {
+  font-size: 24px;
+}
+
+.nick-name {
+  width: 16.5rem;
+}
+
+.edit-btn {
+  background-color: #EFF3F6;
+  text-align: center;
+  border: 1px solid #23292E;
 }
 
 .organize-img {
