@@ -1,3 +1,4 @@
+/********GLOBAL*******/
 * {
   box-sizing: border-box;
 }
@@ -5,13 +6,50 @@
   width: 100%;
 }
 
+/**************************/
 body {
   height: 500px;
 }
 
-#small-profile-img {
+.fa-github {
+  color: #FFF;
+}
+
+.top-nav {
+  color: #FFF;
+}
+
+.header-section {
+  display: flex;
+  padding: 1rem;
+  background-color: #23292E;
+}
+.header-section .top-right-nav {
+  display: flex;
+}
+
+.search-bar {
+  background-color: #3F4448;
+}
+
+#sm-profile-img {
   width: 20px;
   height: 20px;
+}
+
+.profile-nav {
+  width: 100%;
+  border-bottom: 1px solid #D0D5DB;
+}
+
+.circle-in-nav {
+  position: relative;
+  color: #EDEDEE;
+}
+.circle-in-nav .number-in-circle-nav {
+  position: absolute;
+  right: 3px;
+  color: #57606A;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,67 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/9a6235d7e7.js"></script>
-        <title>Git Recreation</title>
-    </head>
-    <body>
-        <header class="header-section row">
-            <nav class="nav-bar text-uppercase justify-content-start">
-            <i class="fab fa-github"></i>
-            <input  type="text" class="search-bar" placeholder="Search or jump to..."/>
-            <a class="top-nav">Pull request</a>
-            <a class="top-nav">issues</a>
-            <a class="top-nav">marketplace</a>
-            <a class="top-nav">explore</a>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Git Recreation</title>
+</head>
+
+<body>
+    <header class="header-section">
+            <nav class="nav-bar text-uppercase">
+                <i class="fab fa-github"></i>
+                <input type="text" class="search-bar" placeholder="Search or jump to..." />
+                <a class="top-nav" href="#">Pull request</a>
+                <a class="top-nav" href="#">issues</a>
+                <a class="top-nav" href="#">marketplace</a>
+                <a class="top-nav" href="#">explore</a>
             </nav>
-            <section class="top-right-nav justify-content-end">
+            <section class="top-right-nav">
                 <i class="fas fa-bell"></i>
                 <i class="fas fa-plus"></i>
                 <i class="fas fa-caret-down"></i>
                 <div class="small-profile-img">
-                <img id="sm-profile-img" src="https://avatars2.githubusercontent.com/u/46248024?s=40&v=4"/>
-                <i class="fas fa-caret-down"></i>
+                    <img id="sm-profile-img" src="https://avatars2.githubusercontent.com/u/46248024?s=40&v=4" />
+                    <i class="fas fa-caret-down"></i>
                 </div>
             </section>
-        </header>
-        <main class="container">
-            <aside class="col col-md-3 col-lg-4 float-md-left">
-                <section class="col-3 col-md-12">
-                    <div class="lg-profile-img">
-                        <img id="profile-img" src="css/me.jpg" />
-                        <i class="far fa-laugh"></i>
-                        <span>Set status</span>
-                    </div>
-                </section>
-                <section class="col-9 col-md-12 float-left">
-                    <h1 class="user-name">
+    </header>
+    <main class="container">
+        <aside class="col col-md-3 col-lg-4 float-md-left">
+            <section class="col-3 col-md-12">
+                <div class="lg-profile-img">
+                    <img id="profile-img" src="css/me.jpg" />
+                    <i class="far fa-laugh"></i>
+                    <span>Set status</span>
+                </div>
+            </section>
+            <section class="col-9 col-md-12 float-left">
+                <h1 class="user-name">
                     <span class="text-uppercase ">Isaiah Carter</span>
                     <span class="">izaycarter</span>
-                    </h1>
-                    <section class="edit-button float-md-left">
-                        <button type="button" class="btn btn-block">Edit profile</button>
-                    </section>
-                    <span>Organizations</span>
-                    <div class="organize-groups">
-                        <img src="https://avatars1.githubusercontent.com/u/54284124?s=70&v=4"/>
+                </h1>
+                <section class="edit-button float-md-left">
+                    <button type="button" class="btn btn-block">Edit profile</button>
+                </section>
+                <span>Organizations</span>
+                <div class="organize-groups">
+                    <img src="https://avatars1.githubusercontent.com/u/54284124?s=70&v=4" />
+                </div>
+            </section>
+        </aside>
+        <main class="col-lg-9 col-md-8 col-12">
+            <section class="row">
+                <nav class="profile-nav col-12">
+                    <a class="profile-section-nav">Overview</a>
+                    <a class="profile-section-nav">Respositories<i class="fas fa-circle circle-in-nav"><span class="number-in-circle-nav">7</span></i></a>
+                    <a class="profile-section-nav ">Projects<i class="fas fa-circle circle-in-nav"><span class="number-in-circle-nav">0</span></i></a>
+                    <a class="profile-section-nav ">Stars<i class="fas fa-circle circle-in-nav"><span class="number-in-circle-nav">0</span></i></a>
+                    <a class="profile-section-nav ">Followers<i class="fas fa-circle circle-in-nav"><span class="number-in-circle-nav">0</span></i></a>
+                    <a class="profile-section-nav">Following<i class="fas fa-circle circle-in-nav"><span class="number-in-circle-nav">0</span></i></a>
+                </nav>
+            </section>
+
+
+
+
+            <form class="reposi-filter-options row">
+                <input type="text" class="reposi-name-search" placeholder="Find a Respository..." />
+                <section class="dropdown type-dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Type: All
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">All</a>
+                        <a class="dropdown-item" href="#">Publice</a>
+                        <a class="dropdown-item" href="#">Private</a>
                     </div>
                 </section>
-            </aside>
-            <main class="float-md-right col-lg-9 col-md-8 col-12">
-                <nav class="">
-                    <a class="profile-section-nav">Overview</a>
-                    <a class="profile-section-nav">Respositories</a>
-                    <a class="profile-section-nav">Projects</a>
-                    <a class="profile-section-nav">Stars</a>
-                    <a class="profile-section-nav">Followers</a>
-                    <a class="profile-section-nav">Following</a>
-                </nav>
+                <section class="dropdown lang-dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Language: All
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">All</a>
+                        <a class="dropdown-item" href="#">HTML</a>
+                        <a class="dropdown-item" href="#">CSS</a>
+                    </div>
+                </section>
+                <button type="button" class="btn btn-success">New</button>
+            </form>
 
-            </main>
+
         </main>
+    </main>
+    <script src="https://kit.fontawesome.com/9a6235d7e7.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 
-    </body>
 </html>
