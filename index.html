@@ -11,16 +11,18 @@
 </head>
 
 <body>
-    <header class="header-section">
+    <header class="header-section justify-content-between">
             <nav class="nav-bar text-uppercase">
                 <div class="github-icon">
                     <i class="fab fa-github"></i>
                 </div>
                 <input type="text" class="search-bar" placeholder="Search or jump to..." />
-                <a class="top-nav" href="#">Pull request</a>
-                <a class="top-nav" href="#">issues</a>
-                <a class="top-nav" href="#">marketplace</a>
-                <a class="top-nav" href="#">explore</a>
+                <div class="nav-options">
+                    <a class="top-nav" href="#">Pull request</a>
+                    <a class="top-nav" href="#">issues</a>
+                    <a class="top-nav" href="#">marketplace</a>
+                    <a class="top-nav" href="#">explore</a>
+                </div>
             </nav>
             <section class="top-right-nav">
                 <i class="fas fa-bell"></i>
@@ -32,78 +34,235 @@
                 </div>
             </section>
     </header>
-    <main class="container">
-        <aside class="col col-md-3 col-lg-4 float-md-left aside-section">
-            <section class="col-3 col-md-12 profile-img-section">
-                <div class="lg-profile-img">
-                    <img id="profile-img" src="css/me.jpg" />
-                </div>
-                <div class="set-status">
-                    <i class="far fa-laugh"></i>
-                    <span>Set status</span>
-                </div>
-            </section>
-            <section class="col-9 col-md-12 float-left user-section">
-                <div class="user-name">
-                    <span id="user-name">Isaiah Carter</span>
-                </div>
-                <div class="nick-name">
-                    <span id="nick-name">izaycarter</span>
-                </div>
-            </section>
-                <section class="edit-button">
-                    <button type="button" class="btn btn-block edit-btn">Edit profile</button>
-                </section>
-                <section>
-                    <span>Organizations</span>
-                    <div class="organize-groups">
-                        <img class="organize-img" src="https://avatars1.githubusercontent.com/u/54284124?s=70&v=4" />
+    <main class="container mt-4 px-3">
+        <section class="main-content row">
+
+            <aside class="col col-md-3 col-lg-3 aside-section">
+                <section class="col-3 col-md-12 profile-img-section">
+                    <div class="lg-profile-img">
+                        <img id="profile-img" src="css/me.jpg" />
+                    </div>
+                    <div class="set-status">
+                        <i class="far fa-laugh"></i>
+                        <span>Set status</span>
                     </div>
                 </section>
-
-        </aside>
-        <main class="col-lg-9 col-md-8 col-12">
-            <section class="row">
-                <nav class="profile-nav col-12">
-                    <a class="profile-section-nav">Overview</a>
-                    <a class="profile-section-nav">Respositories<i class="fas fa-circle circle-in-nav"><span class="number-in-circle-nav">7</span></i></a>
-                    <a class="profile-section-nav ">Projects<i class="fas fa-circle circle-in-nav"><span class="number-in-circle-nav">0</span></i></a>
-                    <a class="profile-section-nav ">Stars<i class="fas fa-circle circle-in-nav"><span class="number-in-circle-nav">0</span></i></a>
-                    <a class="profile-section-nav ">Followers<i class="fas fa-circle circle-in-nav"><span class="number-in-circle-nav">0</span></i></a>
-                    <a class="profile-section-nav">Following<i class="fas fa-circle circle-in-nav"><span class="number-in-circle-nav">0</span></i></a>
-                </nav>
-            </section>
-
-
-
-
-            <form class="reposi-filter-options row">
-                <input type="text" class="reposi-name-search" placeholder="Find a Respository..." />
-                <section class="dropdown type-dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Type: All
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">All</a>
-                        <a class="dropdown-item" href="#">Publice</a>
-                        <a class="dropdown-item" href="#">Private</a>
-                    </div>
+                <section class="col-9 col-md-12 float-left user-section d-block pb-md-3">
+                    <h1 class="name-section">
+                        <span id="user-name">Isaiah Carter</span>
+                        <span id="nick-name">izaycarter</span>
+                    </h1>
                 </section>
-                <section class="dropdown lang-dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Language: All
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">All</a>
-                        <a class="dropdown-item" href="#">HTML</a>
-                        <a class="dropdown-item" href="#">CSS</a>
-                    </div>
+                    <section class="edit-button mb-3">
+                        <button type="button" class="btn btn-block edit-btn">Edit profile</button>
+                    </section>
+                    <section class="border-top py-3">
+                        <span>Organizations</span>
+                        <div class="organize-groups">
+                            <img class="organize-img" src="https://avatars1.githubusercontent.com/u/54284124?s=70&v=4" />
+                        </div>
+                    </section>
+
+            </aside>
+            <main class="col-lg-9 col-md-8 col-12">
+                <section class="width-full main-content-nav">
+                    <nav class="profile-nav d-flex justify-content-between ">
+                        <a class="profile-section-nav">Overview</a>
+                        <a class="profile-section-nav">Respositories<i class="fas fa-circle circle-in-nav"><span class="number-in-circle-nav">7</span></i></a>
+                        <a class="profile-section-nav ">Projects<i class="fas fa-circle circle-in-nav"><span class="number-in-circle-nav">0</span></i></a>
+                        <a class="profile-section-nav ">Stars<i class="fas fa-circle circle-in-nav"><span class="number-in-circle-nav">0</span></i></a>
+                        <a class="profile-section-nav ">Followers<i class="fas fa-circle circle-in-nav"><span class="number-in-circle-nav">0</span></i></a>
+                        <a class="profile-section-nav">Following<i class="fas fa-circle circle-in-nav"><span class="number-in-circle-nav">0</span></i></a>
+                    </nav>
                 </section>
-                <button type="button" class="btn btn-success"><svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>New</button>
-            </form>
 
-
-        </main>
+                <form class="reposi-filter-options width-full d-flex border-gray-dark border-bottom py-3 justify-content- align-items-center">
+                    <section class="find-reposi-bar flex-auto mr-sm-3">
+                        <input type="text" class="reposi-name-search" placeholder="Find a Respository..." />
+                    </section>
+                    <section class="three-buttons d-flex">
+                        <section class="dropdown mr-2 ">
+                            <button class="btn btn-secondary dropdown-toggle type-dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Type: All
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">All</a>
+                                <a class="dropdown-item" href="#">Publice</a>
+                                <a class="dropdown-item" href="#">Private</a>
+                            </div>
+                        </section>
+                        <section class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle lang-dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Language: All
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">All</a>
+                                <a class="dropdown-item" href="#">HTML</a>
+                                <a class="dropdown-item" href="#">CSS</a>
+                            </div>
+                        </section>
+                        <a href="#" class="btn btn-success new-btn ml-3"><svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>New</a>
+                    </section>
+                </form>
+                <section class="reposi-section">
+                    <ul class="reposi-list ">
+                        <li class="reposi-item d-flex col-12 width-full py-4 border-bottom no-gutters">
+                            <section class="reposi-name col-10 col-lg-9 d-inline-block">
+                                <div class="d-inline-block mb-1">
+                                    <h3><a href="#">2-4-1github-recreation</a></h3>
+                                </div>
+                                <section class="text-gray mt-2">
+                                    <span class="ml-0 mr-3">
+                                        <span class="repo-lang-color"></span>
+                                        <span class="program-lang">HTML</span>
+                                    </span>
+                                    Updated
+                                    <relative-time datetime="2019-09-06T23:49:23Z" title="Sep 6, 2019, 7:49 PM EDT">17 hours ago</relative-time>
+                                </section>
+                            </section>
+                            <section class="col-2 col-lg-3 d-flex justify-content-end ">
+                                <section class=right-side-repo-item>
+                                    <section class="star-button d-inline-block">
+                                        <button type="button"class="star-button"><svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>Star</button>
+                                    </section>
+                                </section>
+                            </section>
+                        </li>
+                        <li class="reposi-item d-flex col-12 width-full py-4 border-bottom no-gutters">
+                            <section class="reposi-name col-10 col-lg-9 d-inline-block">
+                                <div class="d-inline-block mb-1">
+                                    <h3><a href="#">2-4-1github-recreation</a></h3>
+                                </div>
+                                <section class="text-gray mt-2">
+                                    <span class="ml-0 mr-3">
+                                        <span class="repo-lang-color"></span>
+                                        <span class="program-lang">HTML</span>
+                                    </span>
+                                    Updated
+                                    <relative-time datetime="2019-09-06T23:49:23Z" title="Sep 6, 2019, 7:49 PM EDT">17 hours ago</relative-time>
+                                </section>
+                            </section>
+                            <section class="col-2 col-lg-3 d-flex justify-content-end ">
+                                <section class=right-side-repo-item>
+                                    <section class="star-button d-inline-block">
+                                        <button type="button"class="star-button"><svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>Star</button>
+                                    </section>
+                                </section>
+                            </section>
+                        </li>
+                        <li class="reposi-item d-flex col-12 width-full py-4 border-bottom no-gutters">
+                            <section class="reposi-name col-10 col-lg-9 d-inline-block">
+                                <div class="d-inline-block mb-1">
+                                    <h3><a href="#">2-4-1github-recreation</a></h3>
+                                </div>
+                                <section class="text-gray mt-2">
+                                    <span class="ml-0 mr-3">
+                                        <span class="repo-lang-color"></span>
+                                        <span class="program-lang">HTML</span>
+                                    </span>
+                                    Updated
+                                    <relative-time datetime="2019-09-06T23:49:23Z" title="Sep 6, 2019, 7:49 PM EDT">17 hours ago</relative-time>
+                                </section>
+                            </section>
+                            <section class="col-2 col-lg-3 d-flex justify-content-end ">
+                                <section class=right-side-repo-item>
+                                    <section class="star-button d-inline-block">
+                                        <button type="button"class="star-button"><svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>Star</button>
+                                    </section>
+                                </section>
+                            </section>
+                        </li>
+                        <li class="reposi-item d-flex col-12 width-full py-4 border-bottom no-gutters">
+                            <section class="reposi-name col-10 col-lg-9 d-inline-block">
+                                <div class="d-inline-block mb-1">
+                                    <h3><a href="#">2-4-1github-recreation</a></h3>
+                                </div>
+                                <section class="text-gray mt-2">
+                                    <span class="ml-0 mr-3">
+                                        <span class="repo-lang-color"></span>
+                                        <span class="program-lang">HTML</span>
+                                    </span>
+                                    Updated
+                                    <relative-time datetime="2019-09-06T23:49:23Z" title="Sep 6, 2019, 7:49 PM EDT">17 hours ago</relative-time>
+                                </section>
+                            </section>
+                            <section class="col-2 col-lg-3 d-flex justify-content-end ">
+                                <section class=right-side-repo-item>
+                                    <section class="star-button d-inline-block">
+                                        <button type="button"class="star-button"><svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>Star</button>
+                                    </section>
+                                </section>
+                            </section>
+                        </li>
+                        <li class="reposi-item d-flex col-12 width-full py-4 border-bottom no-gutters">
+                            <section class="reposi-name col-10 col-lg-9 d-inline-block">
+                                <div class="d-inline-block mb-1">
+                                    <h3><a href="#">2-4-1github-recreation</a></h3>
+                                </div>
+                                <section class="text-gray mt-2">
+                                    <span class="ml-0 mr-3">
+                                        <span class="repo-lang-color"></span>
+                                        <span class="program-lang">HTML</span>
+                                    </span>
+                                    Updated
+                                    <relative-time datetime="2019-09-06T23:49:23Z" title="Sep 6, 2019, 7:49 PM EDT">17 hours ago</relative-time>
+                                </section>
+                            </section>
+                            <section class="col-2 col-lg-3 d-flex justify-content-end ">
+                                <section class=right-side-repo-item>
+                                    <section class="star-button d-inline-block">
+                                        <button type="button"class="star-button"><svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>Star</button>
+                                    </section>
+                                </section>
+                            </section>
+                        </li>
+                        <li class="reposi-item d-flex col-12 width-full py-4 border-bottom no-gutters">
+                            <section class="reposi-name col-10 col-lg-9 d-inline-block">
+                                <div class="d-inline-block mb-1">
+                                    <h3><a href="#">2-4-1github-recreation</a></h3>
+                                </div>
+                                <section class="text-gray mt-2">
+                                    <span class="ml-0 mr-3">
+                                        <span class="repo-lang-color"></span>
+                                        <span class="program-lang">HTML</span>
+                                    </span>
+                                    Updated
+                                    <relative-time datetime="2019-09-06T23:49:23Z" title="Sep 6, 2019, 7:49 PM EDT">17 hours ago</relative-time>
+                                </section>
+                            </section>
+                            <section class="col-2 col-lg-3 d-flex justify-content-end ">
+                                <section class=right-side-repo-item>
+                                    <section class="star-button d-inline-block">
+                                        <button type="button"class="star-button"><svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>Star</button>
+                                    </section>
+                                </section>
+                            </section>
+                        </li>
+                    </ul>
+                </section>
+                <footer class="width-full">
+                    <section class="d-flex pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light">
+                        <ul class="list-style-none d-flex col-12 col-5 flex-justify-center mb-2">
+                            <li class="mr-3 mr-lg-0">© 2019 <span>GitHub</span>, Inc.</li>
+                            <li class="mr-3 mr-lg-0"><a href="#">Terms</a></li>
+                            <li class="mr-3 mr-lg-0"><a href="#">Terms</a></li>
+                            <li class="mr-3 mr-lg-0"><a href="#">Terms</a></li>
+                            <li class="mr-3 mr-lg-0"><a href="#">Terms</a></li>
+                            <li class="mr-3 mr-lg-0"><a href="#">Terms</a></li>
+                        </ul>
+                        <a class="o d-none d-lg-block mx-lg-4" href="https://github.com"><i class="fab fa-github"></i></a>
+                        <ul class="list-style-none d-flex col-12 col-5 flex-justify-center mb-2">
+                            <li class="mr-3 mr-lg-0"><a href="#"></a>Contact Github </li>
+                            <li class="mr-3 mr-lg-0"><a href="#">Pricing</a></li>
+                            <li class="mr-3 mr-lg-0"><a href="#">API</a></li>
+                            <li class="mr-3 mr-lg-0"><a href="#">Training</a></li>
+                            <li class="mr-3 mr-lg-0"><a href="#">Blog</a></li>
+                            <li class="mr-3 mr-lg-0"><a href="#">About</a></li>
+                        </ul>
+                    </section>
+                </footer>
+            </main>
+        </section>
     </main>
     <script src="https://kit.fontawesome.com/9a6235d7e7.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

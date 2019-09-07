@@ -6,11 +6,11 @@
   width: 100%;
 }
 
-/**************************/
-body {
-  height: 500px;
+ul {
+  padding: 0;
 }
 
+/**************************/
 .nav-bar {
   display: flex;
   align-items: center;
@@ -57,21 +57,6 @@ body {
   height: 20px;
 }
 
-.profile-nav {
-  width: 100%;
-  border-bottom: 1px solid #D0D5DB;
-}
-
-.circle-in-nav {
-  position: relative;
-  color: #EDEDEE;
-}
-.circle-in-nav .number-in-circle-nav {
-  position: absolute;
-  right: 3px;
-  color: #57606A;
-}
-
 .aside-section {
   padding-left: 0;
   width: 17.5rem;
@@ -112,25 +97,96 @@ i.fa-laugh {
 }
 
 .user-name {
-  width: 16.5rem;
+  width: 100%;
 }
 .user-name #user-name {
-  font-size: 24px;
+  font-size: 26px;
 }
 
-.nick-name {
-  width: 16.5rem;
+.name-section {
+  line-height: 30px;
+}
+
+#nick-name {
+  font-size: 20px;
+  color: #666;
 }
 
 .edit-btn {
-  background-color: #EFF3F6;
-  text-align: center;
-  border: 1px solid #23292E;
+  color: #24292e;
+  background-color: #eff3f6;
+  background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
 }
 
 .organize-img {
   width: 35px;
   height: 35px;
+}
+
+/************************************************/
+/*********main section*************************/
+.main-content-nav {
+  border-bottom: 1px solid #D0D5DB;
+}
+
+.profile-nav {
+  width: 70%;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid transparent;
+}
+
+.circle-in-nav {
+  position: relative;
+  color: #EDEDEE;
+}
+.circle-in-nav .number-in-circle-nav {
+  position: absolute;
+  right: 3px;
+  color: #57606A;
+}
+
+.reposi-name-search {
+  width: 31rem;
+}
+
+.type-dropdown {
+  width: 5.765rem;
+  font-size: 14px;
+  color: #24292E;
+  background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+}
+
+.lang-dropdown {
+  width: 7.834rem;
+  font-size: 14px;
+  color: #24292E;
+  background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+}
+
+.new-btn {
+  background-color: #00AC53 !important;
+  font-size: 14px;
+}
+
+svg.octicon.octicon-repo {
+  fill: #FFF;
+}
+
+/*************************************/
+.repo-lang-color {
+  background-color: #e34c26;
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.star-button {
+  color: #24292e;
+  background-color: #eff3f6;
+  background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
 }
 
 /*# sourceMappingURL=styles.css.map */
