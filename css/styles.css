@@ -139,12 +139,12 @@ i.fa-laugh {
 
 .profile-nav {
   width: 70%;
-  padding-bottom: 1rem;
 }
 
 .profile-section-nav {
   font-size: 14px;
   text-decoration: none;
+  padding-bottom: 1rem;
   color: #586069;
   border-bottom: 2px solid transparent;
 }
